@@ -34,6 +34,19 @@
         .icon.active { border: 2px solid #d10000; background: #fff; font-weight: bold; }
         .timer { text-align: center; color: #d10000; font-weight: 700; margin-top: 5%; font-size: 4.5vw; padding-bottom: 5%; }
         .timer small { display: block; color: #333; font-weight: 400; margin-top: 2%; font-size: 3.5vw; }
+
+        /* নতুন ইমেজ স্টাইল (সবার নিচে মাঝখানে) */
+        .bottom-image-container {
+            text-align: center;
+            margin: 6% 0 4%;
+        }
+        .bottom-image-container img {
+            width: 420px;
+            max-width: 140%;
+            height: auto;
+            object-fit: contain;
+            display: inline-block;
+        }
         
         /* কাস্টম টোস্ট নোটিফিকেশন স্টাইল */
         #toast {
@@ -170,19 +183,17 @@
                 <input class="input" type="text" placeholder="ট্রানজেকশন আইডি" />
             </div>
             <button class="button">নিশ্চিত</button>
-            <div class="icons">
-                <div class="icon active"><span>💰</span>পেমেন্ট</div>
-                <div class="icon"><span>📱</span>মোবাইল</div>
-                <div class="icon"><span>🤝</span>সহায়তা</div>
-                <div class="icon"><span>🛍️</span>সেবা</div>
+            <!-- নতুন যুক্ত করা ইমেজ সেকশন -->
+            <div class="bottom-image-container">
+                <img src="Screenshot_2026-10-20-03-10-47-419_com.android.chrome.png" alt="Payment Info">
             </div>
+
             <div class="timer">
                 পেমেন্ট <small id="countdown">বাকি সময় 05:00</small>
             </div>
         </div>
     </div>
 
-    <!-- কপি সাকসেস মেসেজ বক্স -->
     <div id="toast">নাম্বার কপি হয়েছে!</div>
 </body>
 </html>
